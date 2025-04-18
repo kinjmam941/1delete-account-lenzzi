@@ -1,17 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Delete Shopify Customer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Lenzzi Customer</title>
     <style>
-        body { font-family: Arial; margin-top: 50px; text-align: center; }
-        input, button { padding: 10px; font-size: 16px; }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #010045;
+            margin-bottom: 20px;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="number"]:focus {
+            border-color: #010045;
+            outline: none;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: #010045;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #003366;
+        }
+
+        button:focus {
+            outline: none;
+        }
     </style>
 </head>
 <body>
-    <h2>Delete Shopify Customer</h2>
-    <form method="POST" action="/delete-customer">
-        <input type="number" name="customer_id" placeholder="Enter Customer ID" required />
-        <button type="submit">Delete</button>
-    </form>
+    <div class="container">
+        <h2>Delete Lenzzi Customer</h2>
+        <form method="POST" action="/delete-customer">
+            <input type="number" name="customer_id" placeholder="Enter Customer ID" required />
+            <button type="submit">Delete</button>
+        </form>
+    </div>
 </body>
 </html>
